@@ -69,3 +69,24 @@ class App extends Component{
 
 
     }
+    
+    return(
+        <div id="main">
+            <h1>Flames App</h1>
+       
+                <label>First Name:</label>
+                <input type="text" id="name1" data-testid="input1"/>
+                <label>Second Name:</label>
+                <input type="text" id="name2" data-testid="input2" />
+                <button onClick={handleSubmit} data-testid="calculate_relationship">Calculate relation</button>
+                <button onClick={Clear} data-testid="clear">Clear</button>
+
+            <h3 id="result" data-testid="answer"></h3>
+ 
+        </div>
+    )
+    
+    }
+}
+
+export default App
